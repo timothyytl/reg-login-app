@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("./assets/maksym-harbar-Vd9QJM0mATg-unsplash.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav img {
+  margin: 1rem 0;
+}
+
+.nav ul {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1rem;
+  font-size: large;
+  text-decoration: none;
+}
