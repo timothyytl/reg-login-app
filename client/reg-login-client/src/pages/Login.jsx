@@ -28,7 +28,7 @@ export default function Login() {
     e.preventDefault()
     try {
       const res = await fetch(
-        "https://reg-login-app-server.vercel.app//login",
+        "https://reg-login-app-server.vercel.app/login",
         options
       )
       if (res.ok) {
