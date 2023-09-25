@@ -27,10 +27,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch(
-        "https://reg-login-app-server.vercel.app/login",
-        options
-      )
+      const res = await fetch("http://localhost:3000/login", options)
       if (res.ok) {
         const data = await res.json()
         setValues(data)
