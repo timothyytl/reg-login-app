@@ -92,14 +92,14 @@ app.post('/signup', async (req, res) => {
     }
 })
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname + '/index.html'))
-// })
-
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname + '/404.html'))
 })
 
 app.listen(port, () => {
     console.log(`App is alive at ${port}`);
+})
+
+app.get('/', (req, res) => {
+    res.json("hello")
 })
