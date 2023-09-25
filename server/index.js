@@ -99,7 +99,3 @@ app.use((req, res) => {
 app.listen(port, () => {
     console.log(`App is alive at ${port}`);
 })
-
-app.get('/', (req, res) => {
-    res.json("hello")
-})
