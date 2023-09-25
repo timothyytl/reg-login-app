@@ -29,7 +29,10 @@ export default function Signup() {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://localhost:3000/signup", options)
+      const res = await fetch(
+        "https://reg-login-app-server.vercel.app/signup",
+        options
+      )
       if (res.ok) {
         const data = await res.json()
         setValues(data)
